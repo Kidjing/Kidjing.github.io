@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-17T06:06:00.556Z</updated>
+  <updated>2020-04-17T06:38:32.146Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,17 +17,17 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo博客导航栏链接URL乱码</title>
+    <title>Hexo博客导航栏链接URL乱码问题</title>
     <link href="http://yoursite.com/2020/04/17/Hexo%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%93%BE%E6%8E%A5URL%E4%B9%B1%E7%A0%81/"/>
     <id>http://yoursite.com/2020/04/17/Hexo%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%93%BE%E6%8E%A5URL%E4%B9%B1%E7%A0%81/</id>
     <published>2020-04-17T05:21:27.087Z</published>
-    <updated>2020-04-17T06:06:00.556Z</updated>
+    <updated>2020-04-17T06:38:32.146Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;Hexo博客导航栏链接URL乱码问题&quot;&gt;&lt;a href=&quot;#Hexo博客导航栏链接URL乱码问题&quot; class=&quot;headerlink&quot; title=&quot;Hexo博客导航栏链接URL乱码问题&quot;&gt;&lt;/a&gt;Hexo博客导航栏链接URL乱码问题&lt;/h1&gt;&lt;p&gt;在网上找了一
+        &lt;p&gt;在网上找了一些教程后开始搭建博客，使用的是hexo-theme-next模板，搭建后发现菜单栏跳转的时候总是出现404错误，通过观察发现跳转菜单页面时，url链接后面总是多一个%20，也就是空格的ASCII编码。反复的修改配置文件的menu选项，无果，后来查找到有一篇博客中
       
     
     </summary>

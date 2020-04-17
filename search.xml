@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>节点引用</title>
+    <url>/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
+    <content><![CDATA[<blockquote>
+<p>如果函数中需要新建结点，即对二叉树的结构做出修改，就需要加引用；如果只是修改当前已有结点的内容，或者仅仅是遍历树，就不用加以引用。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>-数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>-二叉树</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客导航栏链接URL乱码</title>
     <url>/2020/04/17/Hexo%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%93%BE%E6%8E%A5URL%E4%B9%B1%E7%A0%81/</url>
     <content><![CDATA[<p>在网上找了一些教程后开始搭建博客，使用的是hexo-theme-next模板，搭建后发现菜单栏跳转的时候总是出现404错误，通过观察发现跳转菜单页面时，url链接后面总是多一个%20，也就是空格的ASCII编码。反复的修改配置文件的menu选项，无果，后来查找到有一篇博客中给出了解决方案和说明，下面是参考博客链接：<a href="https://blog.csdn.net/fullbug/article/details/103844424?" target="_blank" rel="noopener">https://blog.csdn.net/fullbug/article/details/103844424?</a></p>
@@ -62,19 +76,5 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>节点引用</title>
-    <url>/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
-    <content><![CDATA[<blockquote>
-<p>如果函数中需要新建结点，即对二叉树的结构做出修改，就需要加引用；如果只是修改当前已有结点的内容，或者仅仅是遍历树，就不用加以引用。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>-数据结构与算法</category>
-      </categories>
-      <tags>
-        <tag>-二叉树</tag>
-      </tags>
   </entry>
 </search>

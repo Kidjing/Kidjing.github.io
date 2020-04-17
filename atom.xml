@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-17T08:48:35.700Z</updated>
+  <updated>2020-04-17T09:11:27.194Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,61 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>节点引用</title>
+    <link href="http://yoursite.com/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    <id>http://yoursite.com/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/</id>
+    <published>2020-04-17T06:51:35.000Z</published>
+    <updated>2020-04-17T09:11:27.194Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;如果函数中需要新建结点，即对二叉树的结构做出修改，就需要加引用；如果只是修改当前已有结点的内容，或者仅仅是遍历树，就不用加以引用。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+      <category term="-二叉树" scheme="http://yoursite.com/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大整数运算</title>
+    <link href="http://yoursite.com/2020/04/17/%E5%A4%A7%E6%95%B4%E6%95%B0/"/>
+    <id>http://yoursite.com/2020/04/17/%E5%A4%A7%E6%95%B4%E6%95%B0/</id>
+    <published>2020-04-17T06:51:35.000Z</published>
+    <updated>2020-04-17T09:13:49.096Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;大整数又称为高精度整数，其含义就是用基本数据类型无法存储其精度的整数。例如，在求阶乘的运算时，其结果超过了长整型的范围，导致输出结果溢出。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;一、大整数的存储&quot;&gt;&lt;a href=&quot;#一、大整数的存储
+      
+    
+    </summary>
+    
+    
+    
+      <category term="-高精度" scheme="http://yoursite.com/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo博客导航栏链接URL乱码</title>
     <link href="http://yoursite.com/2020/04/17/Hexo%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%93%BE%E6%8E%A5URL%E4%B9%B1%E7%A0%81/"/>
     <id>http://yoursite.com/2020/04/17/Hexo%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%93%BE%E6%8E%A5URL%E4%B9%B1%E7%A0%81/</id>
     <published>2020-04-17T06:51:35.000Z</published>
-    <updated>2020-04-17T08:48:35.700Z</updated>
+    <updated>2020-04-17T09:09:45.533Z</updated>
     
     <summary type="html">
     
@@ -34,46 +84,7 @@
     
     
     
-  </entry>
-  
-  <entry>
-    <title>大整数</title>
-    <link href="http://yoursite.com/2020/04/16/%E5%A4%A7%E6%95%B4%E6%95%B0/"/>
-    <id>http://yoursite.com/2020/04/16/%E5%A4%A7%E6%95%B4%E6%95%B0/</id>
-    <published>2020-04-16T13:39:23.833Z</published>
-    <updated>2020-04-16T06:50:18.745Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;大整数运算&quot;&gt;&lt;a href=&quot;#大整数运算&quot; class=&quot;headerlink&quot; title=&quot;大整数运算&quot;&gt;&lt;/a&gt;大整数运算&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;大整数又称为高精度整数，其含义就是用基本数据类型无法存储其精度的整数。例如，在求阶乘的运算
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>二叉树</title>
-    <link href="http://yoursite.com/2020/04/16/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
-    <id>http://yoursite.com/2020/04/16/%E4%BA%8C%E5%8F%89%E6%A0%91/</id>
-    <published>2020-04-16T13:39:23.826Z</published>
-    <updated>2020-04-16T06:33:40.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;二叉树&quot;&gt;&lt;a href=&quot;#二叉树&quot; class=&quot;headerlink&quot; title=&quot;二叉树&quot;&gt;&lt;/a&gt;二叉树&lt;/h1&gt;&lt;h2 id=&quot;节点的引用&quot;&gt;&lt;a href=&quot;#节点的引用&quot; class=&quot;headerlink&quot; title=&quot;节点的引用&quot;&gt;&lt;/a&gt;
-      
-    
-    </summary>
-    
-    
+      <category term="-Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
   </entry>
   

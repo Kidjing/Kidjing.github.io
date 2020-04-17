@@ -47,20 +47,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>节点引用</title>
-    <url>/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
-    <content><![CDATA[<blockquote>
-<p>如果函数中需要新建结点，即对二叉树的结构做出修改，就需要加引用；如果只是修改当前已有结点的内容，或者仅仅是遍历树，就不用加以引用。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>-数据结构与算法</category>
-      </categories>
-      <tags>
-        <tag>-二叉树</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>大整数运算</title>
     <url>/2020/04/17/%E5%A4%A7%E6%95%B4%E6%95%B0/</url>
     <content><![CDATA[<blockquote>
@@ -75,6 +61,20 @@
       </categories>
       <tags>
         <tag>-高精度</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>节点引用</title>
+    <url>/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
+    <content><![CDATA[<blockquote>
+<p>如果函数中需要新建结点，即对二叉树的结构做出修改，就需要加引用；如果只是修改当前已有结点的内容，或者仅仅是遍历树，就不用加以引用。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>-数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>-二叉树</tag>
       </tags>
   </entry>
 </search>

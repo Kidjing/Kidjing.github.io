@@ -29,17 +29,20 @@
       </tags>
   </entry>
   <entry>
-    <title>节点引用</title>
-    <url>/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
+    <title>大整数运算</title>
+    <url>/2020/04/17/%E5%A4%A7%E6%95%B4%E6%95%B0/</url>
     <content><![CDATA[<blockquote>
-<p>如果函数中需要新建结点，即对二叉树的结构做出修改，就需要加引用；如果只是修改当前已有结点的内容，或者仅仅是遍历树，就不用加以引用。</p>
+<p>大整数又称为高精度整数，其含义就是用基本数据类型无法存储其精度的整数。例如，在求阶乘的运算时，其结果超过了长整型的范围，导致输出结果溢出。</p>
+</blockquote>
+<h2 id="一、大整数的存储"><a href="#一、大整数的存储" class="headerlink" title="一、大整数的存储"></a>一、大整数的存储</h2><blockquote>
+<p>利用数组即可，将大整数的高位存储在数组的高位，整数的低位存储在数组的低位。</p>
 </blockquote>
 ]]></content>
       <categories>
         <category>-数据结构与算法</category>
       </categories>
       <tags>
-        <tag>-二叉树</tag>
+        <tag>-高精度</tag>
       </tags>
   </entry>
   <entry>
@@ -61,20 +64,17 @@
 ]]></content>
   </entry>
   <entry>
-    <title>大整数运算</title>
-    <url>/2020/04/17/%E5%A4%A7%E6%95%B4%E6%95%B0/</url>
+    <title>节点引用</title>
+    <url>/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
     <content><![CDATA[<blockquote>
-<p>大整数又称为高精度整数，其含义就是用基本数据类型无法存储其精度的整数。例如，在求阶乘的运算时，其结果超过了长整型的范围，导致输出结果溢出。</p>
-</blockquote>
-<h2 id="一、大整数的存储"><a href="#一、大整数的存储" class="headerlink" title="一、大整数的存储"></a>一、大整数的存储</h2><blockquote>
-<p>利用数组即可，将大整数的高位存储在数组的高位，整数的低位存储在数组的低位。</p>
+<p>如果函数中需要新建结点，即对二叉树的结构做出修改，就需要加引用；如果只是修改当前已有结点的内容，或者仅仅是遍历树，就不用加以引用。</p>
 </blockquote>
 ]]></content>
       <categories>
         <category>-数据结构与算法</category>
       </categories>
       <tags>
-        <tag>-高精度</tag>
+        <tag>-二叉树</tag>
       </tags>
   </entry>
 </search>

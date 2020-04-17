@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>LazyGeek</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-04-16T06:50:18.745Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Kidjing</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>大整数</title>
+    <link href="http://yoursite.com/2020/04/16/%E5%A4%A7%E6%95%B4%E6%95%B0/"/>
+    <id>http://yoursite.com/2020/04/16/%E5%A4%A7%E6%95%B4%E6%95%B0/</id>
+    <published>2020-04-16T13:39:23.833Z</published>
+    <updated>2020-04-16T06:50:18.745Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;大整数运算&quot;&gt;&lt;a href=&quot;#大整数运算&quot; class=&quot;headerlink&quot; title=&quot;大整数运算&quot;&gt;&lt;/a&gt;大整数运算&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;大整数又称为高精度整数，其含义就是用基本数据类型无法存储其精度的整数。例如，在求阶乘的运算
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>二叉树</title>
+    <link href="http://yoursite.com/2020/04/16/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    <id>http://yoursite.com/2020/04/16/%E4%BA%8C%E5%8F%89%E6%A0%91/</id>
+    <published>2020-04-16T13:39:23.826Z</published>
+    <updated>2020-04-16T06:33:40.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;二叉树&quot;&gt;&lt;a href=&quot;#二叉树&quot; class=&quot;headerlink&quot; title=&quot;二叉树&quot;&gt;&lt;/a&gt;二叉树&lt;/h1&gt;&lt;h2 id=&quot;节点的引用&quot;&gt;&lt;a href=&quot;#节点的引用&quot; class=&quot;headerlink&quot; title=&quot;节点的引用&quot;&gt;&lt;/a&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2020/04/16/hello-world/"/>
+    <id>http://yoursite.com/2020/04/16/hello-world/</id>
+    <published>2020-04-16T13:35:45.975Z</published>
+    <updated>2020-04-16T04:05:13.404Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>

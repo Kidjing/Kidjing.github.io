@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-17T09:17:16.017Z</updated>
+  <updated>2020-04-17T09:17:26.095Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hexo博客导航栏链接URL乱码</title>
-    <link href="http://yoursite.com/2020/04/17/Hexo%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%93%BE%E6%8E%A5URL%E4%B9%B1%E7%A0%81/"/>
-    <id>http://yoursite.com/2020/04/17/Hexo%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%93%BE%E6%8E%A5URL%E4%B9%B1%E7%A0%81/</id>
-    <published>2020-04-17T06:51:35.000Z</published>
-    <updated>2020-04-17T09:17:16.017Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在网上找了一些教程后开始搭建博客，使用的是hexo-theme-next模板，搭建后发现菜单栏跳转的时候总是出现404错误，通过观察发现跳转菜单页面时，url链接后面总是多一个%20，也就是空格的ASCII编码。反复的修改配置文件的menu选项，无果，后来查找到有一篇博客中给出了解决方案和说明，下面是参考博客链接：&lt;a href=&quot;https://blog.csdn.net/fullbug/article/details/103844424?&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/fullbug/article/details/103844424?&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;问题现象&quot;&gt;&lt;a href=&quot;#问题现象&quot; class=&quot;headerlink&quot; title=&quot;问题现象&quot;&gt;&lt;/a&gt;问题现象&lt;/h2&gt;&lt;p&gt;URL乱码出现在两个地方，一个是上面的导航栏，一个是右边栏的“日志”菜单部分。&lt;/p&gt;
-&lt;h3 id=&quot;导航栏链接乱码问题&quot;&gt;&lt;a href=&quot;#导航栏链接乱码问题&quot; class=&quot;headerlink&quot; title=&quot;导航栏链接乱码问题&quot;&gt;&lt;/a&gt;导航栏链接乱码问题&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/49603166/79550063-700ef900-80ca-11ea-8767-cb27ad2ca5c8.png&quot; alt=&quot;导航栏乱码&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;右边栏的“日志”有乱码&quot;&gt;&lt;a href=&quot;#右边栏的“日志”有乱码&quot; class=&quot;headerlink&quot; title=&quot;右边栏的“日志”有乱码&quot;&gt;&lt;/a&gt;右边栏的“日志”有乱码&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/49603166/79550395-db58cb00-80ca-11ea-9135-524e008ab25d.png&quot; alt=&quot;打开日志导航栏乱码&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;解决方法&quot;&gt;&lt;a href=&quot;#解决方法&quot; class=&quot;headerlink&quot; title=&quot;解决方法&quot;&gt;&lt;/a&gt;解决方法&lt;/h2&gt;&lt;h3 id=&quot;解决导航栏URL乱码&quot;&gt;&lt;a href=&quot;#解决导航栏URL乱码&quot; class=&quot;headerlink&quot; title=&quot;解决导航栏URL乱码&quot;&gt;&lt;/a&gt;解决导航栏URL乱码&lt;/h3&gt;&lt;p&gt;查看themes\hexo-theme-next\layout_partials 下面的 header.swig 代码和模板的配置文件 \themes\hexo-theme-next_config.yml，发现导航栏链接乱码是因为菜单配置是有空格造成的。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="-小麻烦" scheme="http://yoursite.com/categories/%E5%B0%8F%E9%BA%BB%E7%83%A6/"/>
-    
-    
-      <category term="-Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
-    
-  </entry>
   
   <entry>
     <title>节点引用</title>
@@ -89,6 +64,31 @@
     
     
       <category term="-高精度" scheme="http://yoursite.com/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo博客导航栏链接URL乱码</title>
+    <link href="http://yoursite.com/2020/04/17/Hexo%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%93%BE%E6%8E%A5URL%E4%B9%B1%E7%A0%81/"/>
+    <id>http://yoursite.com/2020/04/17/Hexo%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%93%BE%E6%8E%A5URL%E4%B9%B1%E7%A0%81/</id>
+    <published>2020-04-17T06:51:35.000Z</published>
+    <updated>2020-04-17T09:17:16.017Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在网上找了一些教程后开始搭建博客，使用的是hexo-theme-next模板，搭建后发现菜单栏跳转的时候总是出现404错误，通过观察发现跳转菜单页面时，url链接后面总是多一个%20，也就是空格的ASCII编码。反复的修改配置文件的menu选项，无果，后来查找到有一篇博客中给出了解决方案和说明，下面是参考博客链接：&lt;a href=&quot;https://blog.csdn.net/fullbug/article/details/103844424?&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/fullbug/article/details/103844424?&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;问题现象&quot;&gt;&lt;a href=&quot;#问题现象&quot; class=&quot;headerlink&quot; title=&quot;问题现象&quot;&gt;&lt;/a&gt;问题现象&lt;/h2&gt;&lt;p&gt;URL乱码出现在两个地方，一个是上面的导航栏，一个是右边栏的“日志”菜单部分。&lt;/p&gt;
+&lt;h3 id=&quot;导航栏链接乱码问题&quot;&gt;&lt;a href=&quot;#导航栏链接乱码问题&quot; class=&quot;headerlink&quot; title=&quot;导航栏链接乱码问题&quot;&gt;&lt;/a&gt;导航栏链接乱码问题&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/49603166/79550063-700ef900-80ca-11ea-8767-cb27ad2ca5c8.png&quot; alt=&quot;导航栏乱码&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;右边栏的“日志”有乱码&quot;&gt;&lt;a href=&quot;#右边栏的“日志”有乱码&quot; class=&quot;headerlink&quot; title=&quot;右边栏的“日志”有乱码&quot;&gt;&lt;/a&gt;右边栏的“日志”有乱码&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/49603166/79550395-db58cb00-80ca-11ea-9135-524e008ab25d.png&quot; alt=&quot;打开日志导航栏乱码&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;解决方法&quot;&gt;&lt;a href=&quot;#解决方法&quot; class=&quot;headerlink&quot; title=&quot;解决方法&quot;&gt;&lt;/a&gt;解决方法&lt;/h2&gt;&lt;h3 id=&quot;解决导航栏URL乱码&quot;&gt;&lt;a href=&quot;#解决导航栏URL乱码&quot; class=&quot;headerlink&quot; title=&quot;解决导航栏URL乱码&quot;&gt;&lt;/a&gt;解决导航栏URL乱码&lt;/h3&gt;&lt;p&gt;查看themes\hexo-theme-next\layout_partials 下面的 header.swig 代码和模板的配置文件 \themes\hexo-theme-next_config.yml，发现导航栏链接乱码是因为菜单配置是有空格造成的。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="-小麻烦" scheme="http://yoursite.com/categories/%E5%B0%8F%E9%BA%BB%E7%83%A6/"/>
+    
+    
+      <category term="-Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
   </entry>
   

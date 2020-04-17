@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-16T06:50:18.745Z</updated>
+  <updated>2020-04-17T05:50:09.919Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo博客导航栏链接URL乱码</title>
+    <link href="http://yoursite.com/2020/04/17/Hexo%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%93%BE%E6%8E%A5URL%E4%B9%B1%E7%A0%81/"/>
+    <id>http://yoursite.com/2020/04/17/Hexo%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%93%BE%E6%8E%A5URL%E4%B9%B1%E7%A0%81/</id>
+    <published>2020-04-17T05:21:27.087Z</published>
+    <updated>2020-04-17T05:50:09.919Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Hexo博客导航栏链接URL乱码问题&quot;&gt;&lt;a href=&quot;#Hexo博客导航栏链接URL乱码问题&quot; class=&quot;headerlink&quot; title=&quot;Hexo博客导航栏链接URL乱码问题&quot;&gt;&lt;/a&gt;Hexo博客导航栏链接URL乱码问题&lt;/h1&gt;&lt;p&gt;在网上找了一
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>大整数</title>

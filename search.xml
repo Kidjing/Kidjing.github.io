@@ -29,6 +29,23 @@
       </tags>
   </entry>
   <entry>
+    <title>大整数运算</title>
+    <url>/2020/04/17/%E5%A4%A7%E6%95%B4%E6%95%B0/</url>
+    <content><![CDATA[<blockquote>
+<p>大整数又称为高精度整数，其含义就是用基本数据类型无法存储其精度的整数。例如，在求阶乘的运算时，其结果超过了长整型的范围，导致输出结果溢出。</p>
+</blockquote>
+<h2 id="一、大整数的存储"><a href="#一、大整数的存储" class="headerlink" title="一、大整数的存储"></a>一、大整数的存储</h2><blockquote>
+<p>利用数组即可，将大整数的高位存储在数组的高位，整数的低位存储在数组的低位。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>-数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>-高精度</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/04/16/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
@@ -58,23 +75,6 @@
       </categories>
       <tags>
         <tag>-二叉树</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>大整数运算</title>
-    <url>/2020/04/17/%E5%A4%A7%E6%95%B4%E6%95%B0/</url>
-    <content><![CDATA[<blockquote>
-<p>大整数又称为高精度整数，其含义就是用基本数据类型无法存储其精度的整数。例如，在求阶乘的运算时，其结果超过了长整型的范围，导致输出结果溢出。</p>
-</blockquote>
-<h2 id="一、大整数的存储"><a href="#一、大整数的存储" class="headerlink" title="一、大整数的存储"></a>一、大整数的存储</h2><blockquote>
-<p>利用数组即可，将大整数的高位存储在数组的高位，整数的低位存储在数组的低位。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>-数据结构与算法</category>
-      </categories>
-      <tags>
-        <tag>-高精度</tag>
       </tags>
   </entry>
 </search>

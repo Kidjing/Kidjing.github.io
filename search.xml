@@ -1,82 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>节点引用</title>
-      <link href="/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
-      <url>/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>如果函数中需要新建结点，即对二叉树的结构做出修改，就需要加引用；如果只是修改当前已有结点的内容，或者仅仅是遍历树，就不用加以引用。</p></blockquote>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>Hexo博客导航栏链接URL乱码</title>
+    <url>/2020/04/17/Hexo%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%93%BE%E6%8E%A5URL%E4%B9%B1%E7%A0%81/</url>
+    <content><![CDATA[<p>在网上找了一些教程后开始搭建博客，使用的是hexo-theme-next模板，搭建后发现菜单栏跳转的时候总是出现404错误，通过观察发现跳转菜单页面时，url链接后面总是多一个%20，也就是空格的ASCII编码。反复的修改配置文件的menu选项，无果，后来查找到有一篇博客中给出了解决方案和说明，下面是参考博客链接：<a href="https://blog.csdn.net/fullbug/article/details/103844424?" target="_blank" rel="noopener">https://blog.csdn.net/fullbug/article/details/103844424?</a></p>
+<h2 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h2><p>URL乱码出现在两个地方，一个是上面的导航栏，一个是右边栏的“日志”菜单部分。</p>
+<a id="more"></a>
+
+<h3 id="导航栏链接乱码问题"><a href="#导航栏链接乱码问题" class="headerlink" title="导航栏链接乱码问题"></a>导航栏链接乱码问题</h3><p><img src="https://user-images.githubusercontent.com/49603166/79550063-700ef900-80ca-11ea-8767-cb27ad2ca5c8.png" alt="导航栏乱码"></p>
+<h3 id="右边栏的“日志”有乱码"><a href="#右边栏的“日志”有乱码" class="headerlink" title="右边栏的“日志”有乱码"></a>右边栏的“日志”有乱码</h3><p><img src="https://user-images.githubusercontent.com/49603166/79550395-db58cb00-80ca-11ea-9135-524e008ab25d.png" alt="打开日志导航栏乱码"></p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="解决导航栏URL乱码"><a href="#解决导航栏URL乱码" class="headerlink" title="解决导航栏URL乱码"></a>解决导航栏URL乱码</h3><p>查看themes\hexo-theme-next\layout_partials 下面的 header.swig 代码和模板的配置文件 \themes\hexo-theme-next_config.yml，发现导航栏链接乱码是因为菜单配置是有空格造成的。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;li class=<span class="string">"menu-item menu-item-&#123;&#123; itemName | replace(' ', '-') &#125;&#125;"</span>&gt;</span><br><span class="line">  &lt;a href=<span class="string">"&#123;&#123; url_for(path.split('||')[0]) | trim &#125;&#125;"</span> rel=<span class="string">"section"</span>&gt;</span><br><span class="line">	&#123;% <span class="keyword">if</span> theme.menu_icons.enable %&#125;</span><br><span class="line">	  &lt;i class=<span class="string">"menu-item-icon fa fa-fw fa-&#123;&#123; path.split('||')[1] | trim | default('question-circle') &#125;&#125;"</span>&gt;&lt;/i&gt; &lt;br /&gt;</span><br><span class="line">	&#123;% endif %&#125;</span><br><span class="line">	&#123;&#123; __(<span class="string">'menu.'</span> + name) | replace(<span class="string">'menu.'</span>, <span class="string">''</span>) &#125;&#125;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line">&lt;/li&gt;</span><br></pre></td></tr></table></figure>
+
+<p>因为url_for函数会将字符串转码，碰到空格或其他特殊字符会进行转意，就会出现乱码。<br>解决的办法是修改模板的配置文件 \themes\hexo-theme-next_config.yml文件去掉空格就是的。<br>原始配置文件配置如下：</p>
+<p><img src="https://user-images.githubusercontent.com/49603166/79550404-deec5200-80ca-11ea-8dd5-4071d99dc275.png" alt="原配置文件"></p>
+<p><img src="https://user-images.githubusercontent.com/49603166/79550409-e01d7f00-80ca-11ea-8cbc-776ea05123fc.png" alt="修改后的配置文件"></p>
+<h3 id="解决右边栏的“日志”部分URL乱码"><a href="#解决右边栏的“日志”部分URL乱码" class="headerlink" title="解决右边栏的“日志”部分URL乱码"></a>解决右边栏的“日志”部分URL乱码</h3><p>在 themes\hexo-theme-next\layout_macro 找到sidebar.swig 文件 找到如下代码</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> config.archive_dir != <span class="string">'/'</span> and site.posts.length &gt; 0 %&#125;</span><br><span class="line">  &lt;div class=<span class="string">"site-state-item site-state-posts"</span>&gt;</span><br><span class="line">  &#123;% <span class="keyword">if</span> theme.menu.archives %&#125;</span><br><span class="line">	&lt;a href=<span class="string">"&#123;&#123; url_for(theme.menu.archives).split('||')[0] | trim &#125;&#125;"</span>&gt;</span><br><span class="line">  &#123;% <span class="keyword">else</span> %&#125;</span><br><span class="line">	&lt;a href=<span class="string">"&#123;&#123; url_for(config.archive_dir) &#125;&#125;"</span>&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">	  &lt;span class=<span class="string">"site-state-item-count"</span>&gt;&#123;&#123; site.posts.length &#125;&#125;&lt;/span&gt;</span><br><span class="line">	  &lt;span class=<span class="string">"site-state-item-name"</span>&gt;&#123;&#123; __(<span class="string">'state.posts'</span>) &#125;&#125;&lt;/span&gt;</span><br><span class="line">	&lt;/a&gt;</span><br><span class="line">  &lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>将</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;a href=<span class="string">"&#123;&#123; url_for(theme.menu.archives).split('||')[0] | trim &#125;&#125;"</span>&gt;</span><br></pre></td></tr></table></figure>
+<p>修改为</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;a href=<span class="string">"&#123;&#123; url_for(theme.menu.archives.split('||')[0]) | trim &#125;&#125;"</span>&gt;</span><br></pre></td></tr></table></figure>
+<p>问题即可得到解决！（折腾了老半天QAQ）</p>
+]]></content>
       <categories>
-          
-          <category> -数据结构与算法 </category>
-          
+        <category>-小麻烦</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> -二叉树 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo博客导航栏链接URL乱码</title>
-      <link href="/2020/04/17/Hexo%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%93%BE%E6%8E%A5URL%E4%B9%B1%E7%A0%81/"/>
-      <url>/2020/04/17/Hexo%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%93%BE%E6%8E%A5URL%E4%B9%B1%E7%A0%81/</url>
-      
-        <content type="html"><![CDATA[<p>在网上找了一些教程后开始搭建博客，使用的是hexo-theme-next模板，搭建后发现菜单栏跳转的时候总是出现404错误，通过观察发现跳转菜单页面时，url链接后面总是多一个%20，也就是空格的ASCII编码。反复的修改配置文件的menu选项，无果，后来查找到有一篇博客中给出了解决方案和说明，下面是参考博客链接：<a href="https://blog.csdn.net/fullbug/article/details/103844424?" target="_blank" rel="noopener">https://blog.csdn.net/fullbug/article/details/103844424?</a></p><h2 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h2><p>URL乱码出现在两个地方，一个是上面的导航栏，一个是右边栏的“日志”菜单部分。</p><a id="more"></a><h3 id="导航栏链接乱码问题"><a href="#导航栏链接乱码问题" class="headerlink" title="导航栏链接乱码问题"></a>导航栏链接乱码问题</h3><p><img src="https://user-images.githubusercontent.com/49603166/79550063-700ef900-80ca-11ea-8767-cb27ad2ca5c8.png" alt="导航栏乱码"></p><h3 id="右边栏的“日志”有乱码"><a href="#右边栏的“日志”有乱码" class="headerlink" title="右边栏的“日志”有乱码"></a>右边栏的“日志”有乱码</h3><p><img src="https://user-images.githubusercontent.com/49603166/79550395-db58cb00-80ca-11ea-9135-524e008ab25d.png" alt="打开日志导航栏乱码"></p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="解决导航栏URL乱码"><a href="#解决导航栏URL乱码" class="headerlink" title="解决导航栏URL乱码"></a>解决导航栏URL乱码</h3><p>查看themes\hexo-theme-next\layout_partials 下面的 header.swig 代码和模板的配置文件 \themes\hexo-theme-next_config.yml，发现导航栏链接乱码是因为菜单配置是有空格造成的。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;li class=<span class="string">"menu-item menu-item-&#123;&#123; itemName | replace(' ', '-') &#125;&#125;"</span>&gt;</span><br><span class="line">  &lt;a href=<span class="string">"&#123;&#123; url_for(path.split('||')[0]) | trim &#125;&#125;"</span> rel=<span class="string">"section"</span>&gt;</span><br><span class="line">&#123;% <span class="keyword">if</span> theme.menu_icons.enable %&#125;</span><br><span class="line">  &lt;i class=<span class="string">"menu-item-icon fa fa-fw fa-&#123;&#123; path.split('||')[1] | trim | default('question-circle') &#125;&#125;"</span>&gt;&lt;/i&gt; &lt;br /&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line">&#123;&#123; __(<span class="string">'menu.'</span> + name) | replace(<span class="string">'menu.'</span>, <span class="string">''</span>) &#125;&#125;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line">&lt;/li&gt;</span><br></pre></td></tr></table></figure><p>因为url_for函数会将字符串转码，碰到空格或其他特殊字符会进行转意，就会出现乱码。<br>解决的办法是修改模板的配置文件 \themes\hexo-theme-next_config.yml文件去掉空格就是的。<br>原始配置文件配置如下：</p><p><img src="https://user-images.githubusercontent.com/49603166/79550404-deec5200-80ca-11ea-8dd5-4071d99dc275.png" alt="原配置文件"></p><p><img src="https://user-images.githubusercontent.com/49603166/79550409-e01d7f00-80ca-11ea-8cbc-776ea05123fc.png" alt="修改后的配置文件"></p><h3 id="解决右边栏的“日志”部分URL乱码"><a href="#解决右边栏的“日志”部分URL乱码" class="headerlink" title="解决右边栏的“日志”部分URL乱码"></a>解决右边栏的“日志”部分URL乱码</h3><p>在 themes\hexo-theme-next\layout_macro 找到sidebar.swig 文件 找到如下代码</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> config.archive_dir != <span class="string">'/'</span> and site.posts.length &gt; 0 %&#125;</span><br><span class="line">  &lt;div class=<span class="string">"site-state-item site-state-posts"</span>&gt;</span><br><span class="line">  &#123;% <span class="keyword">if</span> theme.menu.archives %&#125;</span><br><span class="line">&lt;a href=<span class="string">"&#123;&#123; url_for(theme.menu.archives).split('||')[0] | trim &#125;&#125;"</span>&gt;</span><br><span class="line">  &#123;% <span class="keyword">else</span> %&#125;</span><br><span class="line">&lt;a href=<span class="string">"&#123;&#123; url_for(config.archive_dir) &#125;&#125;"</span>&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">  &lt;span class=<span class="string">"site-state-item-count"</span>&gt;&#123;&#123; site.posts.length &#125;&#125;&lt;/span&gt;</span><br><span class="line">  &lt;span class=<span class="string">"site-state-item-name"</span>&gt;&#123;&#123; __(<span class="string">'state.posts'</span>) &#125;&#125;&lt;/span&gt;</span><br><span class="line">&lt;/a&gt;</span><br><span class="line">  &lt;/div&gt;</span><br></pre></td></tr></table></figure><p>将</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=<span class="string">"&#123;&#123; url_for(theme.menu.archives).split('||')[0] | trim &#125;&#125;"</span>&gt;</span><br></pre></td></tr></table></figure><p>修改为</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=<span class="string">"&#123;&#123; url_for(theme.menu.archives.split('||')[0]) | trim &#125;&#125;"</span>&gt;</span><br></pre></td></tr></table></figure><p>问题即可得到解决！（折腾了老半天QAQ）</p>]]></content>
-      
-      
+      <tags>
+        <tag>-Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>节点引用</title>
+    <url>/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
+    <content><![CDATA[<blockquote>
+<p>如果函数中需要新建结点，即对二叉树的结构做出修改，就需要加引用；如果只是修改当前已有结点的内容，或者仅仅是遍历树，就不用加以引用。</p>
+</blockquote>
+]]></content>
       <categories>
-          
-          <category> -小麻烦 </category>
-          
+        <category>-数据结构与算法</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> -Hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>大整数运算</title>
-      <link href="/2020/04/17/%E5%A4%A7%E6%95%B4%E6%95%B0/"/>
-      <url>/2020/04/17/%E5%A4%A7%E6%95%B4%E6%95%B0/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>大整数又称为高精度整数，其含义就是用基本数据类型无法存储其精度的整数。例如，在求阶乘的运算时，其结果超过了长整型的范围，导致输出结果溢出。</p></blockquote><h2 id="一、大整数的存储"><a href="#一、大整数的存储" class="headerlink" title="一、大整数的存储"></a>一、大整数的存储</h2><blockquote><p>利用数组即可，将大整数的高位存储在数组的高位，整数的低位存储在数组的低位。</p></blockquote>]]></content>
-      
-      
+      <tags>
+        <tag>-二叉树</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大整数运算</title>
+    <url>/2020/04/17/%E5%A4%A7%E6%95%B4%E6%95%B0/</url>
+    <content><![CDATA[<blockquote>
+<p>大整数又称为高精度整数，其含义就是用基本数据类型无法存储其精度的整数。例如，在求阶乘的运算时，其结果超过了长整型的范围，导致输出结果溢出。</p>
+</blockquote>
+<h2 id="一、大整数的存储"><a href="#一、大整数的存储" class="headerlink" title="一、大整数的存储"></a>一、大整数的存储</h2><blockquote>
+<p>利用数组即可，将大整数的高位存储在数组的高位，整数的低位存储在数组的低位。</p>
+</blockquote>
+]]></content>
       <categories>
-          
-          <category> -数据结构与算法 </category>
-          
+        <category>-数据结构与算法</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> -高精度 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>-高精度</tag>
+      </tags>
+  </entry>
 </search>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-17T09:17:16.017Z</updated>
+  <updated>2020-04-17T09:17:26.095Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>节点引用</title>
+    <link href="http://yoursite.com/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    <id>http://yoursite.com/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/</id>
+    <published>2020-04-17T06:51:35.000Z</published>
+    <updated>2020-04-17T09:17:26.095Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;如果函数中需要新建结点，即对二叉树的结构做出修改，就需要加引用；如果只是修改当前已有结点的内容，或者仅仅是遍历树，就不用加以引用。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+    
+    </summary>
+    
+    
+      <category term="-数据结构与算法" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="-二叉树" scheme="http://yoursite.com/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo博客导航栏链接URL乱码</title>
@@ -38,30 +62,6 @@
     
     
       <category term="-Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>节点引用</title>
-    <link href="http://yoursite.com/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
-    <id>http://yoursite.com/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/</id>
-    <published>2020-04-17T06:51:35.000Z</published>
-    <updated>2020-04-17T09:17:26.095Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;如果函数中需要新建结点，即对二叉树的结构做出修改，就需要加引用；如果只是修改当前已有结点的内容，或者仅仅是遍历树，就不用加以引用。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-    
-    </summary>
-    
-    
-      <category term="-数据结构与算法" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="-二叉树" scheme="http://yoursite.com/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
     
   </entry>
   

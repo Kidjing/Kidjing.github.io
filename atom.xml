@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-18T04:21:23.181Z</updated>
+  <updated>2020-04-17T09:17:26.095Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>节点引用</title>
+    <link href="http://yoursite.com/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    <id>http://yoursite.com/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/</id>
+    <published>2020-04-17T06:51:35.000Z</published>
+    <updated>2020-04-17T09:17:26.095Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;如果函数中需要新建结点，即对二叉树的结构做出修改，就需要加引用；如果只是修改当前已有结点的内容，或者仅仅是遍历树，就不用加以引用。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+    
+    </summary>
+    
+    
+      <category term="-数据结构与算法" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="-二叉树" scheme="http://yoursite.com/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo博客导航栏链接URL乱码</title>
@@ -39,33 +63,6 @@
   </entry>
   
   <entry>
-    <title>节点引用</title>
-    <link href="http://yoursite.com/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
-    <id>http://yoursite.com/2020/04/17/%E4%BA%8C%E5%8F%89%E6%A0%91/</id>
-    <published>2020-04-17T06:51:35.000Z</published>
-    <updated>2020-04-17T09:17:26.095Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;如果函数中需要新建结点，即对二叉树的结构做出修改，就需要加引用；如果只是修改当前已有结点的内容，或者仅仅是遍历树，就不用加以引用。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="-数据结构与算法" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="-二叉树" scheme="http://yoursite.com/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
-    
-  </entry>
-  
-  <entry>
     <title>大整数运算</title>
     <link href="http://yoursite.com/2020/04/17/%E5%A4%A7%E6%95%B4%E6%95%B0/"/>
     <id>http://yoursite.com/2020/04/17/%E5%A4%A7%E6%95%B4%E6%95%B0/</id>
@@ -74,13 +71,13 @@
     
     <summary type="html">
     
-      
-      
-        &lt;blockquote&gt;
+      &lt;blockquote&gt;
 &lt;p&gt;大整数又称为高精度整数，其含义就是用基本数据类型无法存储其精度的整数。例如，在求阶乘的运算时，其结果超过了长整型的范围，导致输出结果溢出。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;一、大整数的存储&quot;&gt;&lt;a href=&quot;#一、大整数的存储
-      
+&lt;h2 id=&quot;一、大整数的存储&quot;&gt;&lt;a href=&quot;#一、大整数的存储&quot; class=&quot;headerlink&quot; title=&quot;一、大整数的存储&quot;&gt;&lt;/a&gt;一、大整数的存储&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;利用数组即可，将大整数的高位存储在数组的高位，整数的低位存储在数组的低位。&lt;/p&gt;
+&lt;/blockquote&gt;
+
     
     </summary>
     

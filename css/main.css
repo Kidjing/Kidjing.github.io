@@ -1201,7 +1201,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #c6f2ff;
+  background: #a8ff4d;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2605,11 +2605,11 @@ body {
 }
 .main-inner {
   background: #fff;
-  opacity: 0.9;
+  opacity: 0.8;
 }
-/*.header-inner {
-      opacity: 0.8;
-}*/
+.header-inner {
+  opacity: 0.8;
+}
 /*.site-meta {
     padding: 20px 0;
     color: #fff;

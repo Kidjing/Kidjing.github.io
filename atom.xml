@@ -25,13 +25,10 @@
     
     <summary type="html">
     
-      
-      
-        &lt;blockquote&gt;
+      &lt;blockquote&gt;
 &lt;p&gt;如果函数中需要新建结点，即对二叉树的结构做出修改，就需要加引用；如果只是修改当前已有结点的内容，或者仅仅是遍历树，就不用加以引用。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-      
     
     </summary>
     
@@ -74,13 +71,13 @@
     
     <summary type="html">
     
-      
-      
-        &lt;blockquote&gt;
+      &lt;blockquote&gt;
 &lt;p&gt;大整数又称为高精度整数，其含义就是用基本数据类型无法存储其精度的整数。例如，在求阶乘的运算时，其结果超过了长整型的范围，导致输出结果溢出。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;一、大整数的存储&quot;&gt;&lt;a href=&quot;#一、大整数的存储
-      
+&lt;h2 id=&quot;一、大整数的存储&quot;&gt;&lt;a href=&quot;#一、大整数的存储&quot; class=&quot;headerlink&quot; title=&quot;一、大整数的存储&quot;&gt;&lt;/a&gt;一、大整数的存储&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;利用数组即可，将大整数的高位存储在数组的高位，整数的低位存储在数组的低位。&lt;/p&gt;
+&lt;/blockquote&gt;
+
     
     </summary>
     

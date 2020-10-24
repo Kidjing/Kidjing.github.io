@@ -194,6 +194,130 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/10/24/%E7%88%B1%E5%A5%87%E8%89%BA%E5%89%8D%E7%AB%AF%E5%AE%9E%E4%B9%A0%E5%87%89%E7%BB%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Kidjing">
+      <meta itemprop="description" content="路漫漫其修远兮，任重而道远">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LazyGeek">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/10/24/%E7%88%B1%E5%A5%87%E8%89%BA%E5%89%8D%E7%AB%AF%E5%AE%9E%E4%B9%A0%E5%87%89%E7%BB%8F/" class="post-title-link" itemprop="url">爱奇艺前端实习凉经</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-24 00:00:00 / 修改时间：10:07:20" itemprop="dateCreated datePublished" datetime="2020-10-24T00:00:00+08:00">2020-10-24</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">-前端</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/10/24/%E7%88%B1%E5%A5%87%E8%89%BA%E5%89%8D%E7%AB%AF%E5%AE%9E%E4%B9%A0%E5%87%89%E7%BB%8F/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/10/24/%E7%88%B1%E5%A5%87%E8%89%BA%E5%89%8D%E7%AB%AF%E5%AE%9E%E4%B9%A0%E5%87%89%E7%BB%8F/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>770</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h2><blockquote>
+<p>面试官一般是带你的主管</p>
+</blockquote>
+<h3 id="面试流程"><a href="#面试流程" class="headerlink" title="面试流程"></a>面试流程</h3><p>自我介绍-&gt;面试官提问-&gt;你还有什么需要问的</p>
+<h3 id="面试内容（不分先后顺序）"><a href="#面试内容（不分先后顺序）" class="headerlink" title="面试内容（不分先后顺序）"></a>面试内容（不分先后顺序）</h3><ol>
+<li>对虚拟DOM的理解<br><img src="https://user-images.githubusercontent.com/49603166/97064667-315a7e00-15da-11eb-904c-9b92b7d37c87.png" alt="虚拟DOM工作流程"><blockquote>
+<p>VDOM的出现是为了解决DOM树的重排重绘的问题的，它在一个虚拟的空间中创建一个类似DOM的结构，只将更新的结果发送给浏览器的DOM树来执行。</p>
+</blockquote>
+</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/49603166/97064660-2dc6f700-15da-11eb-98bd-9d3d5531f4ab.png" alt="虚拟DOM树的渲染"></p>
+<blockquote>
+<p>最具价值的核心功能是如何识别并保存新旧节点数据结构之间差异的方法，也即是diff算法。毫无疑问的是diff算法的复杂度与效率是决定VirtualDOM能够带来性能提升效果的关键因素</p>
+</blockquote>
+<ol start="2">
+<li>Bable的工作原理</li>
+</ol>
+<ul>
+<li>解析（parse）：接受源码并输出AST（抽象语法树）：词法分析和语法分析。</li>
+<li>转换（transformer）：接受AST并对其进行遍历，并对节点进行增删改查生成新的AST。</li>
+<li>生成（generator）：深度优先遍历AST，然后构建可以表示转换后代码的字符串。<br><img src="https://user-images.githubusercontent.com/49603166/97064674-391a2280-15da-11eb-853c-b6422507714a.png" alt="Bable的工作原理"></li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/10/24/%E7%88%B1%E5%A5%87%E8%89%BA%E5%89%8D%E7%AB%AF%E5%AE%9E%E4%B9%A0%E5%87%89%E7%BB%8F/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/17/Hexo%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%93%BE%E6%8E%A5URL%E4%B9%B1%E7%A0%81/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -583,20 +707,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -637,12 +761,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">2k</span>
+    <span title="站点总字数">3k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">2 分钟</span>
+    <span title="站点阅读时长">3 分钟</span>
 </div>
 
         

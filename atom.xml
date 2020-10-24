@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-18T04:21:23.181Z</updated>
+  <updated>2020-10-24T02:07:20.795Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>爱奇艺前端实习凉经</title>
+    <link href="http://yoursite.com/2020/10/24/%E7%88%B1%E5%A5%87%E8%89%BA%E5%89%8D%E7%AB%AF%E5%AE%9E%E4%B9%A0%E5%87%89%E7%BB%8F/"/>
+    <id>http://yoursite.com/2020/10/24/%E7%88%B1%E5%A5%87%E8%89%BA%E5%89%8D%E7%AB%AF%E5%AE%9E%E4%B9%A0%E5%87%89%E7%BB%8F/</id>
+    <published>2020-10-23T16:00:00.000Z</published>
+    <updated>2020-10-24T02:07:20.795Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一面&quot;&gt;&lt;a href=&quot;#一面&quot; class=&quot;headerlink&quot; title=&quot;一面&quot;&gt;&lt;/a&gt;一面&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;面试官一般是带你的主管&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;面试流程&quot;&gt;&lt;a href=&quot;#面试流程&quot; class=&quot;headerlink&quot; title=&quot;面试流程&quot;&gt;&lt;/a&gt;面试流程&lt;/h3&gt;&lt;p&gt;自我介绍-&amp;gt;面试官提问-&amp;gt;你还有什么需要问的&lt;/p&gt;
+&lt;h3 id=&quot;面试内容（不分先后顺序）&quot;&gt;&lt;a href=&quot;#面试内容（不分先后顺序）&quot; class=&quot;headerlink&quot; title=&quot;面试内容（不分先后顺序）&quot;&gt;&lt;/a&gt;面试内容（不分先后顺序）&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;对虚拟DOM的理解&lt;br&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/49603166/97064667-315a7e00-15da-11eb-904c-9b92b7d37c87.png&quot; alt=&quot;虚拟DOM工作流程&quot;&gt;&lt;blockquote&gt;
+&lt;p&gt;VDOM的出现是为了解决DOM树的重排重绘的问题的，它在一个虚拟的空间中创建一个类似DOM的结构，只将更新的结果发送给浏览器的DOM树来执行。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/49603166/97064660-2dc6f700-15da-11eb-98bd-9d3d5531f4ab.png&quot; alt=&quot;虚拟DOM树的渲染&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最具价值的核心功能是如何识别并保存新旧节点数据结构之间差异的方法，也即是diff算法。毫无疑问的是diff算法的复杂度与效率是决定VirtualDOM能够带来性能提升效果的关键因素&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Bable的工作原理&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;解析（parse）：接受源码并输出AST（抽象语法树）：词法分析和语法分析。&lt;/li&gt;
+&lt;li&gt;转换（transformer）：接受AST并对其进行遍历，并对节点进行增删改查生成新的AST。&lt;/li&gt;
+&lt;li&gt;生成（generator）：深度优先遍历AST，然后构建可以表示转换后代码的字符串。&lt;br&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/49603166/97064674-391a2280-15da-11eb-853c-b6422507714a.png&quot; alt=&quot;Bable的工作原理&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="-前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="-实习 -面经" scheme="http://yoursite.com/tags/%E5%AE%9E%E4%B9%A0-%E9%9D%A2%E7%BB%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo博客导航栏链接URL乱码</title>

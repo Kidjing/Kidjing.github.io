@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-10-29T09:15:51.610Z</updated>
+  <updated>2020-10-29T10:50:03.178Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2020/10/29/git/"/>
     <id>http://yoursite.com/2020/10/29/git/</id>
     <published>2020-10-28T16:00:00.000Z</published>
-    <updated>2020-10-29T09:15:51.610Z</updated>
+    <updated>2020-10-29T10:50:03.178Z</updated>
     
     <summary type="html">
     
@@ -29,6 +29,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;真的特别适合初学和进阶&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/49603166/97558716-72f28b00-1a17-11eb-93bd-516571316f1d.png&quot; alt=&quot;最终完成效果&quot;&gt;&lt;/p&gt;
 
     
     </summary>

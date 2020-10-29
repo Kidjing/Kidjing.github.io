@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-10-26T07:33:01.099Z</updated>
+  <updated>2020-10-29T09:15:51.610Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git学习指南</title>
+    <link href="http://yoursite.com/2020/10/29/git/"/>
+    <id>http://yoursite.com/2020/10/29/git/</id>
+    <published>2020-10-28T16:00:00.000Z</published>
+    <updated>2020-10-29T09:15:51.610Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;推荐教程&quot;&gt;&lt;a href=&quot;#推荐教程&quot; class=&quot;headerlink&quot; title=&quot;推荐教程&quot;&gt;&lt;/a&gt;推荐教程&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://learngitbranching.js.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://learngitbranching.js.org&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;真的特别适合初学和进阶&lt;/p&gt;
+&lt;/blockquote&gt;
+
+    
+    </summary>
+    
+    
+      <category term="-工具" scheme="http://yoursite.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="-Git" scheme="http://yoursite.com/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>爱奇艺前端实习凉经</title>

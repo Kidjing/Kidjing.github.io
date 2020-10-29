@@ -132,4 +132,19 @@
         <tag>面经</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Git学习指南</title>
+    <url>/2020/10/29/git/</url>
+    <content><![CDATA[<h2 id="推荐教程"><a href="#推荐教程" class="headerlink" title="推荐教程"></a>推荐教程</h2><p><a href="https://learngitbranching.js.org" target="_blank" rel="noopener">https://learngitbranching.js.org</a></p>
+<blockquote>
+<p>真的特别适合初学和进阶</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>-工具</category>
+      </categories>
+      <tags>
+        <tag>-Git</tag>
+      </tags>
+  </entry>
 </search>
